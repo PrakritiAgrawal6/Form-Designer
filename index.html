@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Form Designer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <h4>Form Designer</h4>
+      <button onclick="logJSON()" class="save-btn">Save</button>
+    </div>
+    <div class="components">Components</div>
+    <div class="container">
+      <div class="sidebar">
+        <button onclick="addElement('input')">Input +</button>
+        <button onclick="addElement('select')">Select +</button>
+        <button onclick="addElement('textarea')">Textarea +</button>
+      </div>
+      <div class="main"><form id="dynamicForm"></form></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
